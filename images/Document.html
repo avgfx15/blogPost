@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://127.0.0.1:5500/Practics/javascript%20event.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #site {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: (autofit, minmax(1fr, autofit));
+            grid-gap: 5px;
+            margin: 10px;
+            padding: 5px;
+            border: 2px solid chocolate;
+
+        }
+
+
+        .container {
+            border: 2px solid bisque;
+
+            padding: 15px;
+        }
+
+        .ans li {
+            list-style: none;
+            margin: auto 20px;
+            line-height: 1.5;
+        }
+
+        #qa {
+            margin: 10px;
+            padding: 20px;
+
+        }
+
+        #img img {
+
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            margin: auto 50px;
+            padding: auto 50px;
+            align-content: center;
+        }
+
+        #img {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img1 {}
+
+        .btn {
+            background-color: aquamarine;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="site">
+        <div id="box" class="container hide">
+            <h1 id="heading">This is javascript Practics</h1>
+            <p id="para" style="display: block;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, porro sunt. Odit totam
+                nihil quaerat nisi dicta modi magnam maxime, architecto officiis, suscipit exercitationem? Quasi facere
+                mollitia odit rem sint vel similique eos ut suscipit molestiae voluptate, inventore enim dolorem
+                recusandae totam, quos maiores? Odit sint possimus impedit molestias ab.</p>
+            <button id="btn" onclick="hidepara()">Click to Hide Para</button>
+        </div>
+
+        <!-- <div id="box" class="container hide">
+            <h2 class="heading" onclick="hidepara()">Javascript Event method</h2>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, porro sunt. Odit totam
+                nihil quaerat nisi dicta modi magnam maxime, architecto officiis, suscipit exercitationem? Quasi facere
+                mollitia odit rem sint vel similique eos ut suscipit molestiae voluptate, inventore enim dolorem
+                recusandae totam, quos maiores? Odit sint possimus impedit molestias ab.</p>
+        </div> -->
+        <!-- <div id="img" class="container">
+            <img class="img1" src="../AVGfx.in/Image/V Small LOGO Akshar Vfx Gfx.png" alt="">
+            <img class="img2" src="../AVGfx.in/Image/mbp logo with TM.png" alt="">
+            <button class="btn" onclick="popup()">MouseOver</button>
+        </div>
+
+        <div id="qa">
+            <h3 class="qa1">What is your Dreams?</h3>
+            <p class="ans1" class="container">
+                <ul class="ans">
+                    <li>Achieve final destination - Akshardham</li>
+                    <li>Donate lacs of Rupee and cars at BAPS temple. Also want to donate free education.</li>
+                    <li>A 5 BHK bunglow in 8000 sqft. area. And Mercedes car.</li>
+                    <li>Happy, Peacefull and religious family life. All family members will enjoy healthy and enjoyable
+                        tour at switzerland.</li>
+                    <li>My above all dreams will possible only and only when my earning is increasing more and more.
+                        That I think My Job earning must be Rs. 100000/- per month, my AVGfx earning minimum - Rs.
+                        25000/- per month, Earning from Mid Brain Power should be Rs. 20000/- per month and other income
+                        like rent, interest, return from investment etc...</li>
+                </ul>
+            </p>
+        </div> -->
+    </div>
+
+    <script>
+        function hidepara(){
+            // let heading = document.getElementsByClassName(`heading`);
+            let para = document.getElementById(`para`);
+            let btn = document.getElementById(`btn`);
+            if (para.style.display != `none`) {
+                para.style.display = `none`;
+            } else {
+                para.style.display = `block`;
+
+            }
+        }
+    </script>
+
+
+
+
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

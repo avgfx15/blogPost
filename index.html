@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fontawasome Link Start  -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- End Of Fontawasome Link Start  -->
+
+  <!-- Bootstrap CSS Link  -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+  <!-- End Of Bootstrap CSS Link  -->
+
+  <!-- Custom CSS File -->
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- End Of Custom CSS File -->
+
+  <title>Post</title>
+</head>
+
+<body>
+  <!-- Background  -->
+
+  <!-- <div class="bg"></div> -->
+
+  <!-- End Of Background  -->
+
+  <!-- Bootstrap Navbar start -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <img src="./images/Akshar Vfx Gfx.png" alt="Logo" class="logo" />
+        <a class="navbar-brand fs-3 cName" href="/">AVGfx</a>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navigation">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutUsPage">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactUsForm">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex ms-5 search" role="search">
+          <input class="form-control me-2 py-1" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success py-1" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- End Of Bootstrap Navbar start -->
+
+  <!-- Home page Image -->
+
+  <div class="homeImg">
+    <div class="addNewPost">
+      <a href="#newPostForm">
+        <button class="newPostBtn" id="addNewPost">Add New Post</button></a>
+      <a href="#contactUsForm">
+        <button class="newPostBtn" id="contactUs">Contact Us</button></a>
+      <a href="#aboutUsPage">
+        <button class="newPostBtn" id="AboutUs">About Us</button></a>
+    </div>
+  </div>
+  <!-- End of Home page Image -->
+
+  <!-- Add New Post Page  -->
+
+  <div class="newPostForm" id="newPostForm">
+    <div class="formBG">
+      <h1 class="titleText mb-3 "">Input New Post Data</h1>
+      <form action="" class=" formField" name="blogArrey">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-images"></i></span>
+          <input type="file" class="form-control" id="blogImgInput" placeholder="Blog Image" aria-label="blogImg"
+            name="blogImgName" accept="image/*" aria-describedby=" basic-addon1" value="src" />
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-heading"></i></span>
+          <input type="text" class="form-control" id="blogTitleInput" placeholder="Blog Title" aria-label="blogTitle"
+            name="blogTitleName" aria-describedby="basic-addon1" />
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="fa-solid fa-paragraph"></i></span>
+          <textarea class="form-control messageText" name="blogPostName" aria-label="blogPostDetails"
+            id="blogDetailsInput" placeholder="Blog Post Details"></textarea>
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-hashtag"></i></span>
+          <input type="text" class="form-control" name="blogTagName" id="blogTagInput" placeholder="Post Tag"
+            aria-label="postTag" aria-describedby="basic-addon1" />
+        </div>
+        <div class="submitButton">
+          <button class="btn btn-primary mt-3 submitBtn" type="submit" id="submitBtn">
+            Submit
+          </button>
+        </div>
+        </form>
+    </div>
+  </div>
+
+  <!-- End Of Add New Post Page  -->
+
+  <!-- All Blog Post View Start  -->
+  <div class="blogPostBG">
+    <div class="blogSection">
+      <h1 class="blogGrTitle">All Blog Post</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4 blogPost">
+        <div class="col">
+          <div class="card h-100">
+            <img src="/images/doctor-1149149_1920.jpg" class="card-img-top blogImg" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title blogTitle">Card title</h5>
+              <p class="card-text blogText">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted blogFooter">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/images/doctor-1149149_1920.jpg" class="card-img-top blogImg" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title blogTitle">Card title</h5>
+              <p class="card-text blogText">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted blogFooter">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/images/doctor-1149149_1920.jpg" class="card-img-top blogImg" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title blogTitle">Card title</h5>
+              <p class="card-text blogText">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted blogFooter">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col blogBox" id="blogBox">
+          <div class="card h-100">
+            <img src="" class="card-img-top blogImg" id="blogImgOutput"></>
+            <div class="card-body">
+              <h5 class="card-title blogTitle" id="blogTitleOutput"></h5>
+              <p class="card-text blogText1" id="blogDetailsOutput">
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-muted blogFooter1" id="blogTagOutput">
+                </>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Of All Blog Post View Start  -->
+
+  <!-- About Us section Start  -->
+  <div class="aboutUsBG" id="aboutUsPage">
+    <div class="aboutUs">
+      <h1 class="aboutUsHead">About Us</h1>
+
+      <!-- Our Vision Start  -->
+
+      <div class="card m-3">
+        <h5 class="card-header">Our Vision</h5>
+        <div class="card-body">
+          <h5 class="card-title">
+            Expand globle and create new vision for Audio Video and Graphics. Also
+            our vision to create unique environment for Web Applications and
+            Mobile Applications. With the new concept our vision to create our
+            life more easy and hendy that create more confort.
+          </h5>
+          <p class="card-text">
+            Now all information of whole world is in our fingertips. People are
+            more friendly with technologies and they are depending on technologies
+            for everything. So, more and more advance technologies take place in
+            the market. So, it's time to think about taking more benefits from
+            technologies. New modern technologies and predominance of Digital
+            Media Marketing, increases business opportunities. So, most of
+            businesses are shifting their action in to Digital Media Marketing
+            techniques.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <!-- End Of Our Vision Start  -->
+
+      <!-- Our Mission Start  -->
+
+      <div class="card m-3">
+        <div class="card-header fw-bolder mission">Our Mission</div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>
+              AVGfx - Destination of your Digital work. That mean for any kind of
+              digital work we are ready to help and create new unique thigs for
+              you and your company that helps to expand your business and help to
+              grow.
+            </p>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- End Of Our Mission Start  -->
+
+      <!-- We are mastering in Start  -->
+
+      <div class="m-3 p-1 card bg-info">
+        <h1 class="mastering">We are Mastering and Expertis</h1>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h1 class="accordion-header" id="headingOne">
+              <button class="accordion-button text-bg-secondary fw-bolder fs-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Web Development
+              </button>
+            </h1>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>knowledge About Web application languages like HTML, CSS,
+                  JAVASCRIPT, REACT, ANGULAR, PHP, REDUX, NODE JS, EXPRESS,
+                  MONGOOSE, MONGO DB, MYSQL etc...
+                </strong>
+              </div>
+              <div class="container">
+                <div class="progress m-3">
+                  <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    HTML - 95%
+                  </div>
+                </div>
+                <div class="progress m-3">
+                  <div class="progress-bar bg-secondary" role="progressbar" aria-label="Example with label"
+                    style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    CSS - 75%
+                  </div>
+                </div>
+                <div class="progress m-3">
+                  <div class="progress-bar bg-info text-black" role="progressbar" aria-label="Example with label"
+                    style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    JAVASCRIPT - 80%
+                  </div>
+                </div>
+                <div class="progress m-3">
+                  <div class="progress-bar bg-warning text-black" role="progressbar" aria-label="Example with label"
+                    style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    REACT - 90%
+                  </div>
+                </div>
+                <div class="progress m-3">
+                  <div class="progress-bar bg-success" role="progressbar" aria-label="Example with label"
+                    style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    ANGULAR - 70%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed text-bg-secondary fw-bolder fs-4" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                Video Editing
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>
+                  knowledge About Video Editing and Cration Software like Adobe
+                  Premier Pro, Adobe Aftereffect, Sony vegas, Edus etc...
+                </strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed text-bg-secondary fw-bolder fs-4" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                Audio Editing
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>
+                  knowledge About Audio Editing and Cration Software like Adobe
+                  Audition, Sony Vegas, SoundForge, Mixit Pro etc...
+                </strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed text-bg-secondary fw-bolder fs-4" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                aria-controls="collapseFour">
+                Graphics
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>knowledge About Graphics Softwares like Adobe Photoshop, Adobe
+                  Illustrator, Coreldraw, Scratch etc...
+                </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Of We are mastering in Start  -->
+
+  <!-- End Of About us Page  -->
+
+  <!-- Contact Us Form  -->
+
+  <div class="contactUsBG" id="contactUsForm">
+    <h1 class="contactUsHeading">Contact Us</h1>
+    <form class="formStyle container" action="mailto:avgfx15@gmail.com">
+      <label for="basic-url" class="form-label text-white fs-5">Your Name</label>
+      <div class="input-group flex-nowrap mb-3">
+        <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user"></i></span>
+        <input type="text" class="form-control" placeholder="Your name" aria-label="Your name"
+          aria-describedby="addon-wrapping" />
+      </div>
+      <label for="basic-url" class="form-label text-white fs-5">Username</label>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-id-badge"></i></span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+          aria-describedby="basic-addon1" />
+      </div>
+      <label for="basic-url" class="form-label text-white fs-5">Email Address</label>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon3"><i class="fa-solid fa-envelope"></i></span>
+        <input type="text" class="form-control" placeholder="Recipient's Email" aria-label="Recipient's Email"
+          aria-describedby="basic-addon2" />
+      </div>
+      <label for="basic-url" class="form-label text-white fs-5">Your Mobile No</label>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon3"><i class="fa-solid fa-mobile"></i></span>
+        <input type="text" class="form-control" placeholder="Recipient's mobile No" aria-label="Recipient's mobile no"
+          id="basic-url" aria-describedby="basic-addon3" />
+      </div>
+      <label for="basic-url" class="form-label text-white fs-5">Your Message</label>
+      <div class="input-group mb-3"><span class="input-group-text" id="basic-addon3"><i
+            class="fa-solid fa-message"></i></span>
+        <textarea class="form-control msgText" placeholder="Message" id="floatingTextarea2"
+          style="height: 100px"></textarea>
+      </div>
+      <div class="input-group mb-3">
+        <button type="button" class="btn btn-primary" id="contactSubmitBtn">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- End Of Contact Us Form  -->
+
+  <!-- Footer  -->
+
+  <div class="footer">
+    <div class="fRow row row-cols-1 row-cols-md-3 g-4">
+      <div class="col footer_1">
+        <img src="./images/Akshar Vfx Gfx.png" alt="Logo" class="logo fLogo" />
+        <h5 class="footer-title">Company</h5>
+        <p class="footer-text">AVGfx</p>
+      </div>
+      <div class="col footer_1">
+        <h5 class="footer-title">Address :</h5>
+        <p class="footer-text">
+          22, Yogeshwarpark, Opp Aquarium,
+        </p>
+        <p class="footer-text">
+          Near Star Hyper, Adajan, Surat.
+        </p>
+        <p class="footer-text">
+          Email : - avgfx15@gmail.com
+        </p>
+        <p class="footer-text">
+          Mobile No : - +91 7016046462
+        </p>
+      </div>
+      <div class="col footer_1">
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.172010223439!2d72.78907971475721!3d21.185324787791195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04d647820a703%3A0x55502dc9122843bc!2sAVGfx!5e0!3m2!1sen!2sin!4v1660238614441!5m2!1sen!2sin"
+          width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Of Footer  -->
+
+  <!-- Bootstrap Javascript CDN  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <!-- End Of Bootstrap Javascript CDN  -->
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

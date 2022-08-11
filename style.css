@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* + Navbar Style Start  */
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.logo {
+  width: 2.1rem;
+  margin: 0.5rem 2rem;
+}
+
+.cName {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+}
+
+/* + End Of Navbar Style Start  */
+
+.homeImg {
+  width: 100%;
+  height: 900px;
+  background: url("/images/tyler-lastovich-2_jtT9tWZKQ-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* + Add New Post Btn  */
+
+.addNewPost {
+  position: relative;
+  top: 36rem;
+  left: 0;
+  text-align: center;
+  /* overflow: visible; */
+}
+
+.newPostBtn {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 0.7rem;
+  background-color: rgb(13, 55, 110);
+  color: white;
+}
+/* + End Of Add New Post Btn  */
+
+/* + Add New Post Style Start  */
+
+.newPostForm {
+  display: none;
+  visibility: hidden;
+}
+
+.formBG {
+  width: 100%;
+  height: 100%;
+  background: url("./images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: visible;
+}
+
+.newPostFormView {
+  margin: 0 auto;
+  display: block;
+  visibility: visible;
+}
+
+.formField {
+  padding: 2rem 10rem;
+}
+
+.form-control {
+  padding: 1rem;
+}
+
+.titleText {
+  text-align: center;
+  color: white;
+  padding-top: 2rem;
+}
+.messageText {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  resize: none;
+}
+
+.submitBtn {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+/* + End Of Add New Post Style Start  */
+
+/* + All Blog Post Display Start  */
+
+.blogPostBG {
+  background-image: url("/images/tiberiu-potec-Tokc7PKfSGM-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+}
+.blogSection {
+  width: 90%;
+  margin: 0.5rem auto;
+  padding: 1rem;
+}
+
+.blogGrTitle {
+  padding: 1rem;
+  text-align: center;
+}
+
+.blogBox {
+  display: none;
+  visibility: hidden;
+}
+
+.blogBoxVisible {
+  display: block;
+  visibility: visible;
+}
+
+/* + End Of All Blog Post Display Start  */
+
+/* + About Us Page Start  */
+
+.aboutUsBG {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background: url("/images/tyler-lastovich-2_jtT9tWZKQ-unsplash.jpg") center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aboutUs {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.aboutUsHead {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2.7rem;
+}
+
+.mastering,
+.mission {
+  font-size: 1.6rem;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+/* + End Of About Us Page  */
+
+/* + Contact Us Form Style  */
+
+.contactUsBG {
+  background: url(/images/freestocks-40k6ZqbsXuo-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.contactUsHeading {
+  color: white;
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+.formStyle {
+  width: 100%;
+  height: 88vh;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.msgText {
+  resize: none;
+}
+
+/* + End Of Contact Us Form Style  */
+
+/* + Footer Section  */
+
+.footer {
+  width: 100%;
+  padding: 2rem;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  font-weight: 600;
+  position: sticky;
+  justify-content: center;
+}
+
+.fRow {
+  width: 90%;
+}
+
+.footer_1 {
+  text-align: center;
+  margin: auto 0;
+}
+
+.fLogo {
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-size: 1.3rem;
+  /* margin: 1rem 0; */
+}
+
+.mapBox {
+  margin: auto 0;
+}
+
+.map {
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+/* + End Of Footer Section  */
