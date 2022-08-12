@@ -6,7 +6,8 @@ const addNewPost = document.querySelector("#addNewPost");
 const newPostForm = document.querySelector("#newPostForm");
 
 const newPost = () => {
-  newPostForm.classList.add("newPostFormView");
+  newPostForm.classList.toggle("newPostFormView");
+  newPostForm.classList.toggle("newPostForm");
 };
 
 addNewPost.addEventListener("click", newPost);
@@ -99,6 +100,54 @@ window.addEventListener("load", () => {
 });
 
 // + End Of Blog Post Data get from Localstorage Start
+
+// + Newsletter Or Subscription Section Start
+
+const subscribeBTN = document.querySelector(".subscribeBTN");
+const subscribeMessage = document.querySelector("#subscribeMessage");
+const subscribe = () => {
+  subscribeMessage.classList.add("subscribeMessageDisplay");
+  setTimeout(() => {
+    subscribeMessage.classList.remove("subscribeMessageDisplay");
+  }, 5000);
+};
+
+subscribeBTN.addEventListener("click", subscribe);
+// + End Of Newsletter Or Subscription Section
+
+// + Blog Post Text Read More Function
+
+const blogTexts = document.querySelectorAll(".blogText");
+let charactor = 100;
+
+blogTexts.forEach((blogText) => {
+  // - if blogText is less then charactor (100) then hide Read More BTN
+  let blogTextLength = blogText.textContent.length;
+
+  if (blogTextLength < charactor) {
+    blogText.nextElementSibling.style.display = "none";
+  } else {
+    let displayText = blogText.textContent.slice(0, charactor);
+    let moreText = blogText.textContent.slice(charactor);
+
+    blogText.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span>`;
+  }
+});
+
+const readMoreText = (btn) => {
+  let post = btn.parentElement;
+
+  post.querySelector(".dots").classList.toggle("hide");
+  post.querySelector(".more").classList.toggle("hide");
+
+  btn.textContent == "Read More"
+    ? (btn.textContent = "Read Less")
+    : (btn.textContent = "Read More");
+};
+
+// readMore.addEventListener("click", readMoreText);
+
+// + End Of Blog Post Text Read More Function
 
 // + Contact Us form Submit Start
 

@@ -59,6 +59,57 @@
 }
 /* + End Of Add New Post Btn  */
 
+/* + Newsletter Or Subscription Section Start */
+
+.newsletterSection {
+  width: 100%;
+  height: 100%;
+  background: url("/images/nicholas-santoianni-bgFB2WJSvLA-unsplash.jpg") center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.newsletterBG {
+  padding: 2rem;
+  text-align: center;
+}
+
+.newsletterHeading {
+  color: white;
+  font-size: 2.4rem;
+  margin: 1rem;
+}
+
+.subscribeBTN {
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: 0;
+  border-radius: 1rem;
+  background-color: rgb(16, 98, 192);
+  color: white;
+  margin-top: 1rem;
+}
+
+.subscribeMessage {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background-color: aquamarine;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: none;
+  visibility: hidden;
+}
+
+.subscribeMessageDisplay {
+  display: block;
+  visibility: visible;
+}
+
+/* + End Of Newsletter Or Subscription Section Start */
+
 /* + Add New Post Style Start  */
 
 .newPostForm {
@@ -133,6 +184,17 @@
 .blogBoxVisible {
   display: block;
   visibility: visible;
+}
+
+.hide {
+  display: none;
+}
+
+.readMore {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgb(216, 196, 13);
 }
 
 /* + End Of All Blog Post Display Start  */

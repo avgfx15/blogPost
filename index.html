@@ -85,6 +85,19 @@
   </div>
   <!-- End of Home page Image -->
 
+  <!-- Newsletter Or Subscription Section Start  -->
+  <div class="newsletterSection">
+    <div class="newsletterBG">
+      <h3 class="newsletterHeading">Subscribe for Newsletter</h3>
+      <button class="subscribeBTN">Click To Subscribe</button>
+      <div class="alert alert-primary subscribeMessage" role="alert" id="subscribeMessage">
+        You have Subscribed Successfully
+      </div>
+
+    </div>
+  </div>
+  <!-- End Of Newsletter Or Subscription Section  -->
+
   <!-- Add New Post Page  -->
 
   <div class="newPostForm" id="newPostForm">
@@ -126,17 +139,30 @@
   <div class="blogPostBG">
     <div class="blogSection">
       <h1 class="blogGrTitle">All Blog Post</h1>
-      <div class="row row-cols-1 row-cols-md-3 g-4 blogPost">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2  g-4 blogPost">
         <div class="col">
           <div class="card h-100">
             <img src="/images/doctor-1149149_1920.jpg" class="card-img-top blogImg" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title blogTitle">Card title</h5>
+            <div class="card-body post">
+              <h5 class="card-title blogTitle">Software</h5>
               <p class="card-text blogText">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sequi aspernatur officiis in
+                placeat, ex totam dicta dignissimos adipisci optio sunt nisi perspiciatis ipsam fugiat et voluptate
+                accusamus molestias? A asperiores quisquam iste, exercitationem consequatur illum voluptas atque animi
+                facilis quas odit officiis rem cumque, commodi ipsa fuga tenetur doloremque, repudiandae dolores aut?
+                Nulla laudantium accusamus impedit minus nisi voluptate, laborum iusto adipisci quasi beatae facilis
+                numquam suscipit optio nemo dicta illum labore quo? Consequatur optio neque esse iste quisquam fuga
+                omnis commodi pariatur ratione? Libero hic omnis facere ratione, expedita officia! Magnam nulla rem unde
+                neque debitis illum atque tenetur facere, laboriosam officia eum perspiciatis dolorem qui distinctio
+                natus cum quis assumenda voluptatem quae quo pariatur et corporis incidunt. Est blanditiis fugit iste
+                necessitatibus veritatis temporibus hic eligendi, nulla explicabo esse error ipsa vitae ut at officiis
+                mollitia aliquam quod non quam, neque nobis vero, asperiores rem. Quo doloremque reiciendis optio
+                provident explicabo eveniet, totam saepe dolorum deserunt, laboriosam sed perferendis aspernatur eum ex,
+                minus nostrum modi perspiciatis. Fuga eos numquam consequatur cupiditate debitis eligendi quis ab
+                incidunt aspernatur. Illo illum ipsam magni explicabo quasi libero natus, nulla quos, error pariatur
+                itaque iure officia consequatur omnis harum optio incidunt!
               </p>
+              <button class="readMore" onclick="readMoreText(this)">Read More</button>
             </div>
             <div class="card-footer">
               <small class="text-muted blogFooter">Last updated 3 mins ago</small>
@@ -146,13 +172,26 @@
         <div class="col">
           <div class="card h-100">
             <img src="/images/doctor-1149149_1920.jpg" class="card-img-top blogImg" alt="..." />
-            <div class="card-body">
+            <div class="card-body post">
               <h5 class="card-title blogTitle">Card title</h5>
               <p class="card-text blogText">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem a dolores, possimus totam nam ex amet
+                facere in, suscipit expedita sequi quaerat debitis beatae libero sit natus ipsam inventore eaque veniam!
+                Quis quos voluptate porro dolore beatae, quo deleniti assumenda, accusamus totam quia a. Unde recusandae
+                quas, delectus dolore qui quisquam numquam molestias corporis aliquid facere, iste possimus. Assumenda,
+                molestias mollitia? Doloremque dolorum ullam facilis minima blanditiis nihil fugiat ducimus explicabo
+                modi voluptates, impedit corporis, dolor fuga repellendus ratione perspiciatis quibusdam ipsa id culpa
+                autem corrupti, ab nisi. Repudiandae maxime animi accusamus rem natus! Praesentium possimus corrupti
+                debitis, voluptas est, esse magnam magni, officia ea excepturi provident corporis? Amet similique
+                voluptatem pariatur. Incidunt provident quia tempore alias quis! Quam, explicabo eveniet corrupti
+                maiores adipisci similique deleniti. Saepe magni facere placeat at voluptate consequatur ipsam, natus,
+                ipsa exercitationem ea amet? Repellat porro ipsum aperiam inventore ratione numquam nostrum corrupti,
+                quisquam ad animi incidunt maiores commodi, officiis labore, quas deleniti accusamus minus quia
+                consectetur officia sint. Cumque officia hic architecto in sed obcaecati voluptatibus voluptas quae
+                vitae facilis sit nesciunt dignissimos molestias, non pariatur laboriosam beatae, nulla quidem. Corrupti
+                est aliquid assumenda! Asperiores perspiciatis minima reprehenderit ipsam inventore consequuntur
               </p>
+              <button class="readMore" onclick="readMoreText(this)">Read More</button>
             </div>
             <div class="card-footer">
               <small class="text-muted blogFooter">Last updated 3 mins ago</small>
@@ -162,13 +201,23 @@
         <div class="col">
           <div class="card h-100">
             <img src="/images/doctor-1149149_1920.jpg" class="card-img-top blogImg" alt="..." />
-            <div class="card-body">
+            <div class="card-body post">
               <h5 class="card-title blogTitle">Card title</h5>
               <p class="card-text blogText">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellat, eligendi distinctio
+                possimus facilis magni amet enim est? Nobis magnam facere inventore ipsa, error dolore sunt recusandae
+                maiores corporis doloribus quidem tenetur modi adipisci delectus totam fuga quod necessitatibus
+                consequatur saepe soluta praesentium vitae at! Autem facere voluptas voluptatum sed minima impedit
+                aliquam quasi at alias porro quo suscipit cumque incidunt iusto esse fuga repellat officia ipsa, aut
+                fugiat quisquam tempore. Velit blanditiis ea iste animi, eligendi id, dolorem quasi pariatur deleniti
+                recusandae quo ex nostrum repellat nisi nihil, maxime sunt! Quia reprehenderit delectus rerum harum eum
+                quod, magnam fugiat, perspiciatis vero aliquam accusantium repellat. Eum asperiores alias, voluptate
+                distinctio dicta tempore error pariatur sed. Corporis nihil nobis voluptas dolorum quidem, unde
+                cupiditate earum ipsa quos incidunt delectus accusantium saepe quis fugit laborum pariatur assumenda
+                repellendus nam. Tempore maxime molestias nesciunt! Dolore, esse? Amet a sint, natus aliquid est nemo
+                officia harum voluptas nam iure!
               </p>
+              <button class="readMore" onclick="readMoreText(this)">Read More</button>
             </div>
             <div class="card-footer">
               <small class="text-muted blogFooter">Last updated 3 mins ago</small>
@@ -178,10 +227,11 @@
         <div class="col blogBox" id="blogBox">
           <div class="card h-100">
             <img src="" class="card-img-top blogImg" id="blogImgOutput"></>
-            <div class="card-body">
+            <div class="card-body post">
               <h5 class="card-title blogTitle" id="blogTitleOutput"></h5>
-              <p class="card-text blogText1" id="blogDetailsOutput">
+              <p class="card-text blogText" id="blogDetailsOutput">
               </p>
+              <button class="readMore" onclick="readMoreText(this)">Read More</button>
             </div>
             <div class="card-footer">
               <p class="text-muted blogFooter1" id="blogTagOutput">
@@ -429,10 +479,10 @@
         </p>
       </div>
       <div class="col footer_1">
-        <iframe class="map"
+        <!-- <iframe class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.172010223439!2d72.78907971475721!3d21.185324787791195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04d647820a703%3A0x55502dc9122843bc!2sAVGfx!5e0!3m2!1sen!2sin!4v1660238614441!5m2!1sen!2sin"
           width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          referrerpolicy="no-referrer-when-downgrade"></iframe> -->
       </div>
     </div>
   </div>
@@ -446,8 +496,6 @@
     crossorigin="anonymous"></script>
 
   <!-- End Of Bootstrap Javascript CDN  -->
-
-
 
   <script src="script.js"></script>
 </body>
